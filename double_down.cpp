@@ -22,15 +22,17 @@ string dice(){
 }
 int main(){
   srand( time(NULL) );
-  int money,time=1,lose=1,r,count=0,continuous=0;
+  int money,time=1,lose=1,r,count=0,continuous=0,targe;
   string choose,n;
   cout<<"輸入本金:";
   cin>>money;
+  cout<<"輸入目標金額:";
+  cin>>targe;
   cout<<"選擇下注基礎倍率(2的次方):";
   cin>>r;
   time=r;
   /* 從基礎倍率開始玩輸了加倍下注直到贏 */
-  while(money>0){
+  while(money<=targe || money<=0){
     count++;
     n=dice();
     int down;
