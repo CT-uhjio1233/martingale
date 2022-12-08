@@ -37,10 +37,10 @@ int main(){
     if (money>=pow(2,time))
     {
       down=pow(2,time);
-      cout<<"下注:"<<pow(2,time)<<",餘額:"<<money-down;
+      cout<<"\n下注:"<<pow(2,time)<<",餘額:"<<money-down;
     }else{
       down=money;
-      cout<<"下注:"<<money<<",餘額:"<<money-down;
+      cout<<"\n下注:"<<money<<",餘額:"<<money-down;
     }
     
     
@@ -68,7 +68,7 @@ int main(){
     }
     cout<<",餘額:"<<money<<endl;
   }
-  cout<<"總下注次數"<<count<<"\n餘額:"<<money<<endl;
+  cout<<"\n總下注次數"<<count<<"\n餘額:"<<money<<endl;
   
   return 0;
 }
