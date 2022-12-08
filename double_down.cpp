@@ -32,7 +32,7 @@ int main(){
   cin>>r;
   time=r;
   /* 從基礎倍率開始玩輸了加倍下注直到贏 */
-  while(money<=targe || money<=0){
+  while(money<=targe && money>0){
     count++;
     n=dice();
     int down;
