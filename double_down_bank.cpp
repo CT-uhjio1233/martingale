@@ -139,7 +139,7 @@ int main(){
         }
     }
 
-    if (money<=0)
+    if (money<=0 || repayment_required>targe*2)
     {
        cout<<"\n您已破產"; 
        break;
